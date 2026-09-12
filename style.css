@@ -313,6 +313,84 @@
     white-space: nowrap;
   }
 
+  /* Education */
+
+  .edu-list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .edu-entry {
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .edu-entry:first-child { border-top: none; padding-top: 8px; }
+
+  .edu-name {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .edu-role {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-top: 4px;
+  }
+
+  .edu-meta {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+  }
+
+  .edu-detail {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .edu-detail .edu-label {
+    color: var(--text);
+    font-weight: 500;
+    margin-right: 8px;
+  }
+
+  .edu-group {
+    margin-top: 18px;
+  }
+
+  .edu-group .edu-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .edu-group ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .edu-group li {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .edu-group li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
   /* Contact */
 
   .contact p {
