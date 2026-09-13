@@ -3,238 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loo Kayden - Cyber & Network Security Student</title>
+<title>Loo Kayden — Cyber & Network Security Student</title>
 <meta name="description" content="Portfolio of a cybersecurity student — projects, CTF writeups, and certifications.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('kayden-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
 </head>
 <body>
 
-<div class="layout">
+<header class="site-header">
+  <a href="index.html" class="brand">Loo Kayden</a>
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a href="index.html" class="active">Overview</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">CTFs</a>
+    <a href="certifications.html">Certifications</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme">🌙</button>
+  </nav>
+</header>
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div>
-      <div class="id-block">
-        <div class="name">Loo Kayden</div>
-        <div class="role">Cyber & Network Security Student</div>
-      </div>
-      <div class="status">
-        <span class=""></span>
-        
-      </div>
+<main>
+  <section class="page hero">
+    <h1>What started as curiosity about how networks work has grown into a drive to help secure them.</h1>
+    <p>
+      Second-year Cyber &amp; Network Security student focused on offensive security
+      and network defense. I spend my time between coursework, CTF competitions,
+      and reading cybersecurity news.
+    </p>
 
-      <nav aria-label="Section navigation">
-        <a href="#overview">01 · Overview</a>
-        <a href="#education">02 · Education</a>
-        <a href="#skills">03 · Skills</a>
-        <a href="#projects">04 · CTFs</a>
-        <a href="#certifications">05 · Certifications</a>
-        <a href="#awards">06 · Honours & Awards</a>
-        <a href="#contact">07 · Contact</a>
-      </nav>
+    <div class="hero-meta">
+      <div><strong>Focus:</strong>Cyber &amp; Network Security</div>
+      <div><strong>Currently:</strong>Interning at Chongqing Polytechnic University of Electronic Technology</div>
+      <div><strong>Available:</strong>Dec 2026</div>
     </div>
 
-    <div class="sidebar-footer">
-      <div class="socials">
-        <a href="https://github.com/wxiwxn" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/kayden-loo" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:luweiwenkayden@gmail.com">Email</a>
-      </div>
-      <div class="note">Based in — / GMT+8</div>
+    <div class="explore-grid">
+      <a class="explore-card" href="education.html">
+        <h3>Education</h3>
+        <span class="arrow">View →</span>
+      </a>
+      <a class="explore-card" href="skills.html">
+        <h3>Skills</h3>
+        <span class="arrow">View →</span>
+      </a>
+      <a class="explore-card" href="projects.html">
+        <h3>CTFs</h3>
+        <span class="arrow">View →</span>
+      </a>
+      <a class="explore-card" href="certifications.html">
+        <h3>Certifications</h3>
+        <span class="arrow">View →</span>
+      </a>
     </div>
-  </aside>
 
-  <!-- MAIN -->
-  <main>
-
-    <section id="overview" class="hero">
-      <h1>What started as curiosity about how networks work has grown into a drive to help secure them.</h1>
-      <p>
-        Second-year Cyber &amp; Network Security student focused on offensive security
-        and network defense. I spend my time between coursework, CTF competitions,
-        and reading cybersecurity news.
-      </p>
-
-      <div class="hero-meta">
-        <div><strong>Focus:</strong>Cyber &amp; Network Security</div>
-        <div><strong>Currently:</strong>Interning at Chongqing Polytechnic University of Electronic Technology</div>
-        <div><strong>Available:</strong>Dec 2026</div>
-      </div>
-    </section>
-
-    <section id="education">
-      <div class="section-num">02 — Education</div>
-      <h2>Education</h2>
-
-      <div class="edu-list">
-        <div class="edu-entry">
-          <div class="edu-name">Institute of Technical Education</div>
-          <div class="edu-role">Higher NITEC in Cyber &amp; Network Security</div>
-          <div class="edu-meta">2025 – 2027 (Expected)</div>
-
-          <div class="edu-detail"><span class="edu-label">Grade:</span>3.9 / 4.0</div>
-          <div class="edu-detail"><span class="edu-label">Activities and societies:</span>Library Club (Member), Network &amp; Security Technology (Member)</div>
-
-          <div class="edu-group">
-            <div class="edu-label">Extra-curricular programmes:</div>
-            <ul>
-              <li>Cloud Security Workshop (2026)</li>
-              <li>Cisco Learn-A-Thorn (2025)</li>
-              <li>Youth Cyber Exploration Programme (2025)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="edu-entry">
-          <div class="edu-name">Bedok View Secondary School</div>
-          <div class="edu-role">GCE O-Level</div>
-          <div class="edu-meta">2020 – 2023</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="section-num">03 — Skills</div>
-      <h2>What I work with</h2>
-
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Systems &amp; Networking</h3>
-          <ul>
-            <li>Linux administration <span class="level">proficient</span></li>
-            <li>Windows OS<span class="level">proficient</span></li>
-            <li>Active Directory <span class="level">proficient</span></li>
-            <li>Cisco Packet Tracer <span class="level">proficient</span></li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Concepts</h3>
-          <ul>
-            <li>Networking <span class="level">proficient</span></li>
-            <li>Virtualisation <span class="level">proficient</span></li>
-            <li>Computer Maintenance <span class="level">proficient</span></li>
-            <li>System Hardening <span class="level">proficient</span></li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Programming</h3>
-          <ul>
-            <li>Python <span class="level">basic</span></li>
-            <li>HTML/CSS <span class="level">basic</span></li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Adaptability <span class="level">proficient</span></li>
-            <li>Detail-oriented <span class="level">proficient</span></li>
-            <li>Collaboration <span class="level">proficient</span></li>
-            <li>Time management <span class="level">proficient</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="section-num">04 — Capture the Flags (CTFs)</div>
-      <h2>Past CTF Experiences</h2>
-
-      <div class="entry">
-        <div class="entry-id">01</div>
-        <div>
-          <h3>SANS Spark CTF 2026</h3>
-          <div class="stack">Digital Forensics · Incident Response</div>
-          <p>
-            Got hands-on with core forensics workflows for the first time: evidence handling in FTK
-            Imager, disk investigation via the SIFT Workstation, and partition analysis using Windows
-            CLI tools like vssadmin.
-          </p>
-          <div class="stack">In collaboration with teammates</div>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="entry-id">02</div>
-        <div>
-          <h3>ASEAN Cyber Race 2025</h3>
-          <div class="stack">Cybersecurity Concepts · Network Defence Concepts</div>
-          <p>
-            Placed 8th amongst 18+ teams in ASEAN region. 
-            Gained exposure to a wide range of cybersecurity concepts,
-            including network defense, web application security, and cryptography.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications">
-      <div class="section-num">05 — Certifications</div>
-      <h2>Credentials</h2>
-
-      <div class="cert-list">
-                <div class="cert">
-          <div class="cert-name">Google Cybersecurity Professional Certificate</div>
-          <div class="cert-meta">Issued Apr 2026</div>
-        </div>
-        <div class="cert">
-          <div class="cert-name">Cisco Certified Support Technician Cybersecurity (CCST)</div>
-          <div class="cert-meta">Issued Jan 2026</div>
-        </div>
-                <div class="cert">
-          <div class="cert-name">Certified in Cybersecurity (CC) by ISC2</div>
-          <div class="cert-meta">Issued Nov 2025</div>
-        </div>
-        <div class="cert">
-          <div class="cert-name">Fortinet Certified Fundamentals Cybersecurity</div>
-          <div class="cert-meta">Issued Sep 2025</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="awards">
-      <div class="section-num">06 — Honours & Awards</div>
-      <h2>Honours &amp; Awards</h2>
-
-      <div class="cert-list">
-        <div class="cert">
-          <div class="cert-name">Director's List</div>
-          <div class="cert-meta">2026</div>
-        </div>
-        <div class="cert">
-          <div class="cert-name">Director's List</div>
-          <div class="cert-meta">2025</div>
-        </div>
-        <div class="cert">
-          <div class="cert-name">Edusave Certificate of Academic Achievement</div>
-          <div class="cert-meta">2025</div>
-        </div>
-         <div class="cert">
-          <div class="cert-name">Edusave Award for Achievement, Good Leadership and Service</div>
-          <div class="cert-meta">2025</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="section-num">07 — Contact</div>
+    <div class="page-block contact">
       <h2>Let's talk</h2>
       <p>
         Open to any inqueries; feel free to reach out directly.
       </p>
       <div class="contact-actions">
         <a class="btn primary" href="mailto:luweiwenkayden@gmail.com">Send an email</a>
-        <a class="btn" href="https://github.com/wxiwxn" target="_blank" rel="noopener">View GitHub</a>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <footer>
-      © 2026 Loo Kayden. Built with HTML &amp; CSS, hosted on GitHub Pages.
-    </footer>
+<footer class="site-footer">
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/kayden-loo" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:luweiwenkayden@gmail.com">Email</a>
+  </div>
+  <p>© 2026 Loo Kayden. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+</footer>
 
-  </main>
-</div>
-
+<script src="site.js" defer></script>
 </body>
 </html>
