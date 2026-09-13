@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Loo Kayden</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('kayden-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">Loo Kayden</a>
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a href="index.html">Overview</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="projects.html">CTFs</a>
+    <a href="certifications.html">Certifications</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="page">
+    <h2>What I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Systems &amp; Networking</h3>
+        <ul>
+          <li>Linux administration <span class="level">proficient</span></li>
+          <li>Windows OS <span class="level">proficient</span></li>
+          <li>Active Directory <span class="level">proficient</span></li>
+          <li>Cisco Packet Tracer <span class="level">proficient</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Concepts</h3>
+        <ul>
+          <li>Networking <span class="level">proficient</span></li>
+          <li>Virtualisation <span class="level">proficient</span></li>
+          <li>Computer Maintenance <span class="level">proficient</span></li>
+          <li>System Hardening <span class="level">proficient</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python <span class="level">basic</span></li>
+          <li>HTML/CSS <span class="level">basic</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Adaptability <span class="level">proficient</span></li>
+          <li>Detail-oriented <span class="level">proficient</span></li>
+          <li>Collaboration <span class="level">proficient</span></li>
+          <li>Time management <span class="level">proficient</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/kayden-loo" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:luweiwenkayden@gmail.com">Email</a>
+  </div>
+  <p>© 2026 Loo Kayden. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTFs — Loo Kayden</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('kayden-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">Loo Kayden</a>
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a href="index.html">Overview</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html" class="active">CTFs</a>
+    <a href="certifications.html">Certifications</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="page">
+    <h2>Past CTF Experiences</h2>
+
+    <div class="entry">
+      <div class="entry-id">01</div>
+      <div>
+        <h3>SANS Spark CTF 2026</h3>
+        <div class="stack">Digital Forensics · Incident Response</div>
+        <p>
+          Got hands-on with core forensics workflows for the first time: evidence handling in FTK
+          Imager, disk investigation via the SIFT Workstation, and partition analysis using Windows
+          CLI tools like vssadmin.
+        </p>
+        <div class="stack">In collaboration with teammates</div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-id">02</div>
+      <div>
+        <h3>ASEAN Cyber Race 2025</h3>
+        <div class="stack">Cybersecurity Concepts · Network Defence Concepts</div>
+        <p>
+          Placed 8th amongst 18+ teams in ASEAN region.
+          Gained exposure to a wide range of cybersecurity concepts,
+          including network defense, web application security, and cryptography.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/kayden-loo" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:luweiwenkayden@gmail.com">Email</a>
+  </div>
+  <p>© 2026 Loo Kayden. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
